@@ -1,0 +1,162 @@
+h3 {
+  text-align: center;
+  font-size: 30px; /* Slightly larger for prominence */
+  font-family: 'Montserrat', sans-serif;
+  color: #1a202c; /* Darker for contrast */
+  margin-bottom: 30px;
+  font-weight: 700; /* Bolder for impact */
+  letter-spacing: -0.02em; /* Subtle tightening */
+}
+
+.container {
+  width: 60vw;
+  max-width: 900px; /* Prevent overly wide tables */
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px; /* Softer corners */
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1); /* Stronger shadow for depth */
+  transition: transform 0.3s ease; /* Subtle lift effect */
+}
+
+.container:hover {
+  transform: translateY(-2px); /* Slight elevation on hover */
+}
+
+.short-col {
+  width: 15vw;
+  max-width: 200px;
+  min-width: 100px; /* Prevent collapsing */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  background-color: #ffffff;
+  border-radius: 8px; /* Rounded table corners */
+  overflow: hidden; /* Ensure rounded corners apply */
+}
+
+table th {
+  text-align: left;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); /* Subtle gradient */
+  color: #1a202c;
+  font-weight: 600;
+  border-bottom: 2px solid #d1d8e0; /* Darker border */
+  text-transform: uppercase; /* Sophisticated touch */
+  letter-spacing: 0.05em;
+}
+
+table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #2d3748; /* Softer text color */
+}
+
+table tr {
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+table tr:hover {
+  background-color: #edf2f7; /* Softer hover effect */
+}
+
+td i {
+  display: none !important; /* Hidden by default */
+  font-size: 16px; /* Consistent size */
+  color: #4a5568; /* Neutral color */
+}
+
+.button {
+  background: linear-gradient(135deg, #68d391 0%, #4ade80 100%); /* Vibrant green gradient */
+  margin: 4px 0;
+  border: none;
+  border-radius: 8px; /* Softer corners */
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 9px 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Ensure no underline */
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(74,222,128,0.3);
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #4ade80 0%, #38a169 100%); /* Darker green */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(74,222,128,0.4);
+}
+
+.add-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Indigo gradient */
+  width: 140px; /* Slightly wider */
+  line-height: 38px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(102,126,234,0.3);
+}
+
+.add-button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%); /* Darker indigo */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(102,126,234,0.4);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1000px) {
+  .short-col {
+    width: 70px; /* Adjusted for clarity */
+    max-width: 70px;
+  }
+  
+  td i {
+    display: inline-block !important; /* Show icons */
+  }
+ 
+  td span {
+    display: none !important; /* Hide text */
+  }
+ 
+  table .button {
+    width: 45px;
+    padding: 9px;
+    font-size: 14px;
+  }
+  
+  .container {
+    width: 88vw;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 92vw;
+    padding: 15px;
+  }
+  
+  table th, table td {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .add-button {
+    width: 120px;
+    line-height: 34px;
+  }
+}

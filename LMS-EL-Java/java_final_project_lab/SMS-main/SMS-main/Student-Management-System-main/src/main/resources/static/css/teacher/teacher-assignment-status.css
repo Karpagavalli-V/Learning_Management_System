@@ -1,0 +1,98 @@
+h3 {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 24px; /* Slightly larger for emphasis */
+  color: #1a202c; /* Rich black for bold contrast */
+  font-weight: 700; /* Bolder for impact */
+  letter-spacing: -0.02em; /* Subtle tightening for elegance */
+  margin-bottom: 1rem;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.table {
+  margin: 0;
+  width: 60%;
+  min-width: 520px;
+  max-width: 960px;
+  border-collapse: collapse; /* Ensure clean table borders */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for modern look */
+  overflow: hidden; /* Ensure rounded corners apply */
+  font-family: 'Inter', sans-serif; /* Sleek, professional font */
+}
+
+#inner-table-one {
+  width: 50vw;
+  min-width: 400px;
+  max-width: 720px;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+#inner-table-two {
+  width: 15vw;
+  min-width: 130px;
+  max-width: 240px;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.table tr {
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.table tr:nth-child(odd) {
+  background-color: #f7fafc; /* Soft background for odd rows */
+}
+
+.table tr:nth-child(even) {
+  background-color: #ffffff; /* White for even rows */
+}
+
+.table tr:nth-child(odd):hover {
+  background-color: #edf2f7; /* Softer hover effect for odd rows */
+  transform: scale(1.01); /* Subtle zoom on hover */
+}
+
+.table tr:nth-child(even):hover {
+  background-color: #f1f5f9; /* Slightly off-white hover for even rows */
+  transform: scale(1.01); /* Subtle zoom on hover */
+}
+
+.table th, .table td {
+  padding: 12px 10px; /* Improved padding for readability */
+  border: 1px solid #e2e8f0; /* Clean borders */
+  text-align: center; /* Centered content */
+  font-size: 16px; /* Readable font size */
+}
+
+.table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Vibrant gradient */
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase; /* Adds sophistication */
+  letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .table {
+    width: 90%;
+    min-width: 400px;
+  }
+  
+  #inner-table-one {
+    min-width: 300px;
+  }
+  
+  #inner-table-two {
+    min-width: 100px;
+  }
+  
+  .table th, .table td {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}

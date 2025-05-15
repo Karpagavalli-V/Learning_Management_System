@@ -1,0 +1,104 @@
+table {
+  margin: 35px auto 0;
+  border-bottom: 2px solid #ed8936; /* Slightly darker orange for sophistication */
+  border-collapse: collapse;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif; /* Professional font */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure rounded corners apply */
+  width: 90%; /* Responsive width */
+  max-width: 1200px; /* Prevent overly wide tables */
+}
+
+thead {
+  height: 1.8em;
+  text-align: left;
+}
+
+th {
+  background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%); /* Vibrant gradient */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; /* Adds sophistication */
+  letter-spacing: 0.05em;
+  padding: 14px 0.5em; /* Adjusted padding */
+}
+
+th, td {
+  width: 15vw;
+  padding-left: 0.5em;
+  border: 1px solid #e2e8f0; /* Clean borders */
+  vertical-align: middle; /* Better alignment */
+}
+
+#table-top-left {
+  border-top-left-radius: 8px;
+}
+
+#table-top-right {
+  border-top-right-radius: 8px;
+}
+
+tr {
+  height: 50px;
+  background-color: #f7fafc; /* Softer background */
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #e2e8f0; /* Lighter gray for hover */
+  transform: scale(1.01); /* Subtle zoom effect */
+}
+
+.long-cell {
+  width: 20vw !important;
+  min-width: 180px !important; /* Ensure readability */
+}
+
+.longer-cell {
+  width: 25vw !important;
+  min-width: 220px !important;
+}
+
+.short-cell {
+  width: 10vw;
+  min-width: 100px !important; /* Prevent collapsing */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  table {
+    width: 95%;
+    font-size: 16px;
+  }
+  
+  th, td {
+    width: auto; /* Flexible widths */
+    padding: 10px 0.4em;
+  }
+  
+  .long-cell, .longer-cell, .short-cell {
+    width: auto !important; /* Prevent overflow */
+    min-width: 120px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  table {
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 8px 0.3em;
+  }
+  
+  .longer-cell {
+    min-width: 150px !important;
+  }
+}

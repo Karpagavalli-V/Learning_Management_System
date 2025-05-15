@@ -1,0 +1,135 @@
+h3 {
+  text-align: center;
+  font-size: 30px; /* Slightly larger for emphasis */
+  font-family: 'Poppins', sans-serif;
+  color: #1a202c; /* Darker for better contrast */
+  margin-bottom: 30px;
+  font-weight: 700; /* Bolder for impact */
+  letter-spacing: -0.02em; /* Subtle tightening for elegance */
+}
+
+.content {
+  padding: 0;
+  background: linear-gradient(180deg, #f8f9fa 0%, #edf2f7 100%); /* Subtle gradient for depth */
+  border-radius: 14px; /* Softer corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Light shadow for lift */
+}
+
+.card-container {
+  width: 80%; /* Slightly wider for balance */
+  max-width: 780px;
+  margin: auto;
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centered cards */
+}
+
+.card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 95px;
+  width: 30%;
+  max-width: 260px;
+  min-width: 170px;
+  text-align: center;
+  background: linear-gradient(135deg, #3498db 0%, #2b6cb0 100%); /* Gradient for vibrancy */
+  border-radius: 12px; /* Smoother corners */
+  margin: 1.5%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease; /* Smooth transitions */
+  text-decoration: none; /* Ensure no underline */
+}
+
+.card:hover {
+  transform: translateY(-6px); /* More pronounced lift */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Stronger shadow */
+  background: linear-gradient(135deg, #2b6cb0 0%, #2c5282 100%); /* Darker gradient on hover */
+}
+
+.card i {
+  width: 44px;
+  line-height: 44px;
+  border-radius: 50%; /* Consistent circle */
+  background-color: rgba(255,255,255,0.95); /* Slightly more opaque */
+  margin-right: 1.2vw;
+  color: #1a202c; /* Matches h3 for consistency */
+  font-size: 22px; /* Slightly larger for balance */
+  transition: transform 0.3s ease;
+}
+
+.card:hover i {
+  transform: scale(1.1); /* Subtle icon animation */
+}
+
+.card span {
+  font-size: 21px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600; /* Slightly bolder */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+}
+
+#students {
+  background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%); /* Warm orange gradient */
+}
+
+#students:hover {
+  background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%); /* Darker on hover */
+}
+
+#teachers {
+  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%); /* Bold red gradient */
+}
+
+#teachers:hover {
+  background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%); /* Darker on hover */
+}
+
+.fa-user {
+  font-size: 20px !important; /* Fixed typo (L20px) */
+}
+
+.fa-user-secret {
+  font-size: 20px !important;
+}
+
+.fa-pencil {
+  font-size: 20px !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .card {
+    width: 45%;
+    margin: 2%;
+    line-height: 85px;
+  }
+  
+  .card span {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .card-container {
+    width: 180px;
+  }
+  
+  .card {
+    width: 100%;
+    margin: 0 0 15px 0;
+    max-width: none;
+    line-height: 80px;
+  }
+  
+  .card i {
+    margin-right: 2vw;
+  }
+}

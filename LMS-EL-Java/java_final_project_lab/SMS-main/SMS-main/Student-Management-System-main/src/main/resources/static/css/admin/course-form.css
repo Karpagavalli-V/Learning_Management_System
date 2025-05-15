@@ -1,0 +1,169 @@
+h3 {
+  font-size: 30px; /* Slightly larger for emphasis */
+  text-align: center;
+  padding-top: 30px;
+  color: #1a202c; /* Darker for contrast */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; /* Bolder for impact */
+  margin-bottom: 25px;
+  letter-spacing: -0.02em; /* Subtle tightening */
+}
+
+.content {
+  padding-top: 50px;
+  background: linear-gradient(180deg, #f7f9fc 0%, #edf2f7 100%); /* Subtle gradient */
+  min-height: 100vh;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); /* Soft inner shadow */
+}
+
+.container {
+  width: 520px; /* Slightly wider for balance */
+  min-height: 360px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.1); /* Stronger shadow for depth */
+  border-radius: 14px; /* Softer corners */
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  padding: 25px 0 35px;
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.container:hover {
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+.container form {
+  width: 85%; /* Slightly wider form for comfort */
+  margin: auto;
+}
+
+.form-input-item {
+  margin: 18px 0;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #2d3748; /* Softer dark gray */
+}
+
+.error {
+  color: #c53030; /* Vibrant red for visibility */
+  font-size: 14px;
+  margin: 8px 0 0;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.4rem; /* Slightly taller for usability */
+  margin-top: 10px;
+  border-radius: 8px; /* Softer corners */
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0; /* Clean border */
+  padding: 0 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #1a202c;
+  transition: all 0.3s ease;
+}
+
+.content input:focus {
+  outline: none;
+  border-color: #667eea; /* Vibrant indigo for focus */
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.2); /* Subtle focus ring */
+}
+
+select {
+  box-sizing: border-box;
+  width: 60%; /* Wider for better usability */
+  height: 2.4rem;
+  margin-top: 10px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  padding: 0 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #1a202c;
+  background-color: #f7fafc; /* Soft background */
+  transition: all 0.3s ease;
+  appearance: none; /* Remove default styling */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%231a202c' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.2);
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Indigo gradient */
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  height: 42px;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(102,126,234,0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%); /* Darker gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(102,126,234,0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(102,126,234,0.3);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 650px) {
+  .container {
+    width: 92%;
+    min-height: 320px;
+    padding: 20px 0 25px;
+  }
+  
+  .container form {
+    width: 90%;
+  }
+  
+  .content input, select {
+    height: 2.2rem;
+    font-size: 15px;
+  }
+  
+  button {
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h3 {
+    font-size: 26px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .form-input-item {
+    margin: 14px 0;
+  }
+}

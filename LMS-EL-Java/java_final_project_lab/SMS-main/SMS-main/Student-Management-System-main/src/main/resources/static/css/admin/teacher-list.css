@@ -1,0 +1,172 @@
+/* Color Palette */
+:root {
+  --primary: #4f46e5; /* Vibrant indigo for buttons and accents */
+  --primary-dark: #4338ca; /* Darker shade for hover */
+  --secondary: #f97316; /* Bright orange for highlights */
+  --background: #f8fafc; /* Light gray-blue for page background */
+  --card-bg: #ffffff; /* White for table and cards */
+  --text-dark: #1e293b; /* Dark slate for text */
+  --text-muted: #64748b; /* Muted gray for secondary text */
+  --alert-bg: #fef2f2; /* Softer red for alerts */
+  --alert-text: #dc2626; /* Bold red for alert text */
+}
+
+/* Heading Styling */
+h3 {
+  font-size: 28px; /* Slightly larger for emphasis */
+  text-align: center;
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif; /* Modern, clean font */
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em; /* Tighten spacing for polish */
+  background: linear-gradient(90deg, var(--primary), var(--secondary)); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 0.5s ease-in; /* Subtle entrance animation */
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px auto;
+  background: var(--card-bg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Softer, deeper shadow */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Ensure rounded corners apply */
+}
+
+/* Table Cells */
+td, th {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0; /* Light separator */
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+}
+
+th {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); /* Gradient header */
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.short-col {
+  width: 100px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* Alert Styling */
+#alert {
+  margin: 20px auto;
+  max-width: 600px;
+  color: var(--alert-text);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 12px;
+  background-color: var(--alert-bg);
+  border-radius: 8px;
+  border: 1px solid var(--alert-text);
+  box-shadow: 0 2px 10px rgba(220, 38, 38, 0.1); /* Subtle shadow */
+  animation: slideIn 0.3s ease-out; /* Smooth slide-in effect */
+}
+
+/* Button Styling */
+.button {
+  background: linear-gradient(45deg, var(--primary), var(--primary-dark)); /* Gradient button */
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space for icons */
+}
+
+.button:hover {
+  background: linear-gradient(45deg, var(--primary-dark), var(--primary)); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); /* Glow shadow */
+}
+
+.button:active {
+  transform: translateY(0); /* Press down effect */
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 900px) {
+  h3 {
+    font-size: 24px;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  .short-col {
+    width: 60px;
+    font-size: 14px;
+  }
+
+  td i {
+    display: inline-block !important;
+    color: var(--primary);
+    font-size: 18px;
+  }
+
+  td a span {
+    display: none !important;
+  }
+
+  table .button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: var(--primary) !important;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular buttons */
+  }
+
+  #alert {
+    font-size: 14px;
+    padding: 10px;
+    margin: 15px;
+  }
+}
+
+/* Wider Screens */
+@media screen and (min-width: 1420px) {
+  table {
+    width: 80%;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+}

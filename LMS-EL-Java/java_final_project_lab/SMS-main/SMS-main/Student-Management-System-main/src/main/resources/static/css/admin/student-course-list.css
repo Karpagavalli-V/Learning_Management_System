@@ -1,0 +1,113 @@
+h3 {
+  font-size: 26px; /* Slightly larger for emphasis */
+  text-align: center;
+  color: #1a202c; /* Darker blue-gray for contrast */
+  font-family: 'Segoe UI', Arial, sans-serif; /* Modern font with fallback */
+  font-weight: 600; /* Bolder for impact */
+  margin-bottom: 20px;
+  letter-spacing: -0.02em; /* Subtle tightening */
+}
+
+.content {
+  padding: 30px 7vw 0; /* Increased padding for balance */
+  background: linear-gradient(180deg, #f8f9fa 0%, #edf2f7 100%); /* Subtle gradient */
+  min-height: 100vh; /* Ensure full height */
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); /* Soft inner shadow */
+}
+
+/* Buttons */
+.add-button {
+  width: 220px; /* Slightly wider for usability */
+  line-height: 42px; /* Adjusted for balance */
+  margin-top: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Indigo gradient */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* Softer corners */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block; /* Ensure compatibility with <a> or <button> */
+  text-decoration: none; /* Prevent underline for links */
+  box-shadow: 0 3px 6px rgba(102,126,234,0.3); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.add-button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%); /* Darker gradient */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(102,126,234,0.4); /* Enhanced shadow */
+}
+
+.add-button:active {
+  transform: translateY(0); /* Reset on click */
+  box-shadow: 0 2px 4px rgba(102,126,234,0.3); /* Reduced shadow */
+}
+
+.delete-button {
+  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%); /* Vibrant red gradient */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px; /* Consistent padding */
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(229,62,62,0.3);
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%); /* Darker red */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(229,62,62,0.4);
+}
+
+.delete-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(229,62,62,0.3);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .content {
+    padding: 20px 5vw 0;
+  }
+  
+  .add-button {
+    width: 180px;
+    line-height: 38px;
+    font-size: 15px;
+  }
+  
+  .delete-button {
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 22px;
+  }
+  
+  .add-button {
+    width: 160px;
+    line-height: 36px;
+  }
+  
+  .delete-button {
+    padding: 8px 14px;
+  }
+}

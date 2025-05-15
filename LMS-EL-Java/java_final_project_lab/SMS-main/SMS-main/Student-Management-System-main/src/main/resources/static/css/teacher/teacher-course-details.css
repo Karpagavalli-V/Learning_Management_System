@@ -1,0 +1,140 @@
+h2 {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  text-align: center;
+  font-size: 28px; /* Larger for prominence */
+  color: #1a202c; /* Rich black for contrast */
+  font-weight: 700; /* Bold for impact */
+  letter-spacing: -0.02em; /* Subtle tightening for elegance */
+  margin-bottom: 1.5rem;
+}
+
+table {
+  margin: 0;
+  border-collapse: collapse; /* Clean table borders */
+  width: 100%; /* Full width for consistency */
+  font-family: 'Inter', sans-serif; /* Sleek, professional font */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Subtle shadow for depth */
+  border-radius: 8px; /* Modern rounded corners */
+  overflow: hidden; /* Ensure rounded corners apply */
+}
+
+#table-one {
+  margin-top: 25px;
+  max-width: 840px;
+  background-color: #f7fafc; /* Soft background */
+}
+
+#table-two {
+  max-width: 1540px;
+}
+
+#table-two th, #table-two td {
+  width: 10vw;
+  min-width: 110px;
+  padding: 12px 10px; /* Improved padding */
+  border: 1px solid #e2e8f0; /* Clean borders */
+  text-align: center;
+  font-size: 16px;
+}
+
+#table-two th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Vibrant gradient */
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#table-three tr {
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+#table-three tr:nth-child(odd) {
+  background-color: #f7fafc; /* Soft background for odd rows */
+}
+
+#table-three tr:nth-child(even) {
+  background-color: #ffffff; /* White for even rows */
+}
+
+#table-three tr:nth-child(odd):hover {
+  background-color: #edf2f7; /* Softer hover for odd rows */
+  transform: scale(1.01); /* Subtle zoom */
+}
+
+#table-three tr:nth-child(even):hover {
+  background-color: #f1f5f9; /* Slightly off-white hover */
+  transform: scale(1.01); /* Subtle zoom */
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.new-button {
+  display: inline-block;
+  width: 160px;
+  line-height: 42px;
+  margin-top: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Vibrant gradient */
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.new-button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%); /* Darker gradient */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.edit-button {
+  display: inline-block;
+  width: 110px;
+  line-height: 38px;
+  margin-top: 12px;
+  background: linear-gradient(135deg, #38a169 0%, #2f855a 100%); /* Green gradient */
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background: linear-gradient(135deg, #2f855a 0%, #276749 100%); /* Darker green */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1445px) {
+  .button, .new-button, .edit-button {
+    margin: 4px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #table-one {
+    max-width: 90%;
+    min-width: 400px;
+  }
+  
+  #table-two th, #table-two td {
+    min-width: 90px;
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}

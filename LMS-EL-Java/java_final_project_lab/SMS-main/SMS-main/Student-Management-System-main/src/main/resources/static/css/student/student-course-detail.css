@@ -1,0 +1,181 @@
+h3 {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 22px; /* Slightly larger for emphasis */
+  color: #1a202c; /* Rich black for bold contrast */
+  margin-bottom: 1.2rem;
+  font-weight: 700; /* Bolder for impact */
+  letter-spacing: -0.02em; /* Subtle tightening for elegance */
+}
+
+/* Table Styles */
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Stronger shadow for depth */
+  border-radius: 10px; /* Rounded corners for modern look */
+  overflow: hidden; /* Ensure rounded corners apply */
+}
+
+thead {
+  height: 1.8em;
+  text-align: center;
+}
+
+th {
+  background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%); /* Vibrant gradient */
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 14px 10px;
+  position: sticky;
+  top: 0;
+  text-transform: uppercase; /* Adds sophistication */
+  letter-spacing: 0.05em;
+}
+
+th, td {
+  width: 15%;
+  padding: 12px 10px;
+  border: 1px solid #e2e8f0;
+}
+
+#table-top-left {
+  border-top-left-radius: 10px;
+}
+
+#table-top-right {
+  border-top-right-radius: 10px;
+}
+
+tr {
+  height: 50px;
+  background-color: #f7fafc; /* Slightly softer background */
+  transition: all 0.3s ease; /* Smoother transition */
+}
+
+tr:hover {
+  background-color: #edf2f7; /* More noticeable hover effect */
+  transform: scale(1.01); /* Subtle zoom on hover */
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Card Styles */
+.card {
+  display: inline-block;
+  width: 30%;
+  max-width: 260px;
+  min-width: 170px;
+  text-align: center;
+  margin: 2%;
+  margin-left: 0;
+  position: relative;
+  transition: all 0.3s ease; /* Smoother transition */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* More pronounced lift */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Enhanced shadow */
+}
+
+.card a {
+  text-decoration: none;
+  display: block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient for vibrancy */
+  border-radius: 10px;
+  height: 100px;
+  padding: 18px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%); /* Darker gradient on hover */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.fa-clipboard-list {
+  color: #667eea; /* Matches card gradient */
+}
+
+.card i {
+  width: 44px;
+  line-height: 44px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  font-size: 22px;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover i {
+  transform: translateY(-50%) scale(1.1); /* Subtle icon animation */
+}
+
+.card span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#card-name {
+  line-height: 22px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 80%;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Subtle text shadow */
+}
+
+#card-day {
+  line-height: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 16px;
+  opacity: 0.85;
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  color: #f7fafc;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 45%;
+    margin: 2% 2% 2% 0;
+  }
+
+  th, td {
+    padding: 10px 6px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .card-container {
+    width: 175px;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 18px;
+    max-width: none;
+  }
+  
+  th, td {
+    padding: 8px 4px;
+    font-size: 13px;
+  }
+}

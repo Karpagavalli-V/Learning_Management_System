@@ -1,0 +1,84 @@
+h3 {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 24px; /* Slightly larger for emphasis */
+  color: #1a202c; /* Rich black for bold contrast */
+  margin-bottom: 18px;
+  font-weight: 700; /* Bolder for visual impact */
+  letter-spacing: -0.02em; /* Subtle tightening for elegance */
+}
+
+.content {
+  font-family: 'Inter', sans-serif; /* Sleek, professional font */
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability */
+  color: #2d3748; /* Deep gray-blue for a premium feel */
+}
+
+.content span {
+  font-weight: 600; /* Slightly lighter bold for balance */
+  color: #1a202c; /* Matches heading for consistency */
+  background: linear-gradient(180deg, transparent 65%, #b2f5ea 65%); /* Subtle highlight effect */
+}
+
+.content div {
+  margin-bottom: 12px;
+  padding: 6px 0;
+}
+
+#completed {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #2f855a; /* Vibrant yet sophisticated green */
+  background-color: #e6fffa; /* Softer green background */
+  padding: 4px 10px;
+  border-radius: 6px; /* Smoother corners */
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+#incomplete {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #c53030; /* Bold, attention-grabbing red */
+  background-color: #fff1f2; /* Soft red background */
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient for a modern, dynamic look */
+  text-decoration: none;
+  width: 170px;
+  line-height: 38px;
+  color: #ffffff !important;
+  text-align: center;
+  border-radius: 8px; /* Softer, modern radius */
+  margin-top: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease; /* Smoother transition */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* Stronger shadow for depth */
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%); /* Darker gradient on hover */
+  transform: translateY(-2px); /* More pronounced lift */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Enhanced shadow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    font-size: 16px;
+  }
+  
+  .button {
+    width: 150px;
+    line-height: 34px;
+  }
+}

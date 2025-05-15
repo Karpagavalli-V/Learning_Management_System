@@ -1,0 +1,136 @@
+.table {
+  font-size: 18px;
+  width: 100%;
+  margin: 25px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden; /* Ensures rounded corners clip content */
+  background: rgba(255, 255, 255, 0.95); /* Slight glassmorphism effect */
+  backdrop-filter: blur(8px);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  height: 2em;
+  text-align: left;
+}
+
+.td {
+  padding: 0;
+}
+
+th {
+  background: linear-gradient(90deg, #ff6b6b, #feca57); /* Vibrant gradient header */
+  color: white;
+  font-weight: 700;
+  padding: 14px 10px;
+  position: sticky;
+  top: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+th, td {
+  width: 15%;
+  padding: 12px 10px;
+  border: 1px solid #e5e7eb; /* Softer border color */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#table-top-left {
+  border-top-left-radius: 12px;
+}
+
+#table-top-right {
+  border-top-right-radius: 12px;
+}
+
+tr {
+  height: 50px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+tr:hover {
+  background-color: #f0f9ff; /* Light blue hover effect */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+tr:nth-child(even) {
+  background-color: #f9fafb; /* Slightly different even row color */
+}
+
+.table-align-center, 
+.table-align-center thead {
+  text-align: center;
+}
+
+.table-align-center th,
+.table-align-center td {
+  text-align: center;
+}
+
+.long-cell {
+  width: 20%;
+}
+
+.longer-cell {
+  width: 30%;
+}
+
+.short-cell {
+  width: 10%;
+}
+
+/* Responsive additions */
+@media (max-width: 768px) {
+  .table {
+    font-size: 16px;
+  }
+  
+  th, td {
+    padding: 10px 8px;
+  }
+  
+  /* Stack table for smaller screens */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .table {
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 8px 6px;
+  }
+}
+
+/* Zebra striping for better readability */
+tr:nth-child(odd):not(:hover) {
+  background-color: #f8fafc;
+}
+
+/* Animation for table rows on load */
+tr {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,156 @@
+h3 {
+  font-size: 26px; /* Slightly larger for emphasis */
+  text-align: center;
+  color: #1a202c; /* Darker gray-blue for contrast */
+  font-family: 'Inter', Arial, sans-serif; /* Modern font with fallback */
+  font-weight: 600; /* Bolder for impact */
+  margin-bottom: 25px;
+  letter-spacing: -0.02em; /* Subtle tightening */
+}
+
+table {
+  width: 90%;
+  max-width: 1000px; /* Prevent overly wide tables */
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Slightly stronger shadow */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure rounded corners apply */
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #ffffff; /* Clean white background */
+}
+
+table th {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); /* Subtle gradient */
+  color: #1a202c;
+  font-weight: 600;
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 2px solid #d1d8e0; /* Darker border */
+  text-transform: uppercase; /* Sophisticated touch */
+  letter-spacing: 0.05em;
+}
+
+table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0; /* Clean border */
+  color: #2d3748; /* Soft gray for text */
+  vertical-align: middle; /* Better alignment */
+}
+
+table tr {
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+table tr:hover {
+  background-color: #edf2f7; /* Softer hover effect */
+}
+
+/* Table cells */
+.short-cell {
+  width: 70px; /* Slightly wider for balance */
+  min-width: 60px; /* Prevent collapsing */
+  text-align: center;
+  color: #4a5568;
+}
+
+.action-col {
+  width: 140px; /* Slightly wider for buttons */
+  min-width: 100px; /* Prevent squeezing */
+}
+
+/* Buttons */
+.button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Indigo gradient */
+  color: #ffffff !important;
+  border: none;
+  padding: 9px 14px; /* Slightly larger padding */
+  border-radius: 8px; /* Softer corners */
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block; /* Support <a> or <button> */
+  text-decoration: none; /* Prevent underline */
+  box-shadow: 0 2px 5px rgba(102,126,234,0.3); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%); /* Darker gradient */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 4px 10px rgba(102,126,234,0.4); /* Enhanced shadow */
+}
+
+.button:active {
+  transform: translateY(0); /* Reset on click */
+  box-shadow: 0 2px 4px rgba(102,126,234,0.3); /* Reduced shadow */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 900px) {
+  table {
+    width: 95%; /* Slightly wider for small screens */
+  }
+  
+  .action-col {
+    width: 90px; /* Adjusted for icons */
+  }
+  
+  td i {
+    display: inline-block !important;
+    color: #667eea; /* Match button gradient */
+    font-size: 16px; /* Consistent size */
+  }
+ 
+  td span {
+    display: none !important;
+  }
+ 
+  table .button {
+    width: 35px; /* Slightly larger for touch */
+    line-height: 32px;
+    background: transparent; /* Clean mobile look */
+    color: #667eea !important;
+    padding: 0; /* Minimal padding */
+    box-shadow: none; /* Remove shadow for simplicity */
+  }
+}
+
+/* Wider screens */
+@media screen and (min-width: 1420px) {
+  table {
+    width: 80%;
+    max-width: 1200px; /* Slightly wider for large screens */
+  }
+  
+  .short-cell {
+    width: 80px;
+  }
+  
+  .action-col {
+    width: 160px;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 98%;
+  }
+  
+  table th, table td {
+    padding: 10px 12px;
+    font-size: 14px; /* Slightly smaller for mobile */
+  }
+  
+  .action-col {
+    width: 80px;
+  }
+}
